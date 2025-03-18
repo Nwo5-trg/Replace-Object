@@ -54,7 +54,7 @@ class $modify(EditUI, EditorUI) {
                 if (copyValues) {
                     obj->setScaleX(currentObj.scaleX);
                     obj->setScaleY(currentObj.scaleY);
-                    obj->setRotation(currentObj.rotation);
+                    obj->setRotationX(currentObj.rotation);
                     obj->setFlipX(currentObj.flipX);
                     obj->setFlipY(currentObj.flipY);
                     for (short group : currentObj.groups) obj->addToGroup(group);

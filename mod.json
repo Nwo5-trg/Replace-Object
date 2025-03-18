@@ -7,7 +7,7 @@
 	},
 	"id": "nwo5.replace_object",
 	"name": "Replace Object",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Nwo5",
 	"description": "Quickly replace one object with another.",
 	"tags": ["editor", "utility", "offline"],
