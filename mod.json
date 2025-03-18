@@ -1,0 +1,36 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
+	},
+	"id": "nwo5.replace_object",
+	"name": "Replace Object",
+	"version": "v1.0.0",
+	"developer": "Nwo5",
+	"description": "Quickly replace one object with another.",
+	"tags": ["editor", "utility", "offline"],
+	"links": {
+		"source": "https://github.com/Nwo5-trg/Replace-Object"
+	},
+	"resources": {
+		"spritesheets": {
+            "Sheet": ["resources/Sheet/*.png"]
+        }
+    },
+	"settings": {
+		"select-on-replace": {
+			"type": "bool",
+			"name": "Select On Replace",
+			"description": "Selects everything after replacing.",
+			"default": false
+		},
+		"copy-values": {
+			"type": "bool",
+			"name": "Copy Values",
+			"description": "Whether to copy values like scale and rotation or not when replacing.",
+			"default": true
+		}
+	}
+}
