@@ -8,7 +8,7 @@ using namespace geode::prelude;
 class $modify(EditUI, EditorUI) {
     struct Object {
         GameObject* obj;
-        float scaleX, scaleY, rotation;
+        float scaleX, scaleY, rotationX, rotationY;
         bool flipX, flipY;
         std::vector<short> groups;
     };
@@ -39,7 +39,7 @@ class $modify(EditUI, EditorUI) {
                 if (obj->m_objectID == replaceObjID) {
                     std::vector<short> groups;
                     if (obj->m_groups) for (short group : *obj->m_groups) if (group != 0) groups.emplace_back(group);
-                    replaceVector.emplace_back(Object{obj, obj->m_scaleX, obj->m_scaleY, obj->getObjectRotation(), obj->m_isFlipX, obj->m_isFlipY, groups});
+                    replaceVector.emplace_back(Object{obj, obj->m_scaleX, obj->m_scaleY, obj->getRotationX(), obj->getRotationY(), obj->m_isFlipX, obj->m_isFlipY, groups});
                     replaceArray.addObject(obj);
                 }
             }
@@ -54,7 +54,8 @@ class $modify(EditUI, EditorUI) {
                 if (copyValues) {
                     obj->setScaleX(currentObj.scaleX);
                     obj->setScaleY(currentObj.scaleY);
-                    obj->setRotationX(currentObj.rotation);
+                    obj->setRotationX(currentObj.rotationX);
+                    obj->setRotationY(currentObj.rotationY);
                     obj->setFlipX(currentObj.flipX);
                     obj->setFlipY(currentObj.flipY);
                     for (short group : currentObj.groups) obj->addToGroup(group);
