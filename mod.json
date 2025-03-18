@@ -7,7 +7,7 @@
 	},
 	"id": "nwo5.replace_object",
 	"name": "Replace Object",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "Nwo5",
 	"description": "Quickly replace one object with another.",
 	"tags": ["editor", "utility", "offline"],
@@ -20,6 +20,12 @@
         }
     },
 	"settings": {
+		"delete-on-replace": {
+			"type": "bool",
+			"name": "Delete On Replace",
+			"description": "Delete the 2 objects you use to select what objects to replace and what to replace with.",
+			"default": false
+		},
 		"select-on-replace": {
 			"type": "bool",
 			"name": "Select On Replace",

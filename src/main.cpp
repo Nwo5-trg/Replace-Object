@@ -25,9 +25,11 @@ class $modify(EditUI, EditorUI) {
             
             auto copyValues = Mod::get()->getSettingValue<bool>("copy-values");
 
-            deselectAll();
-            selectObjects(&tempObjs, true);
-            m_trashBtn->activate();
+            if (Mod::get()->getSettingValue<bool>("delete-on-replace")) {
+                deselectAll();
+                selectObjects(&tempObjs, true);
+                m_trashBtn->activate();
+            }
             
             auto objs = selectedObjs->count() > 2 ? selectedObjs : m_editorLayer->m_objects;
             
