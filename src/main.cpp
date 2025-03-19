@@ -55,7 +55,9 @@ class $modify(EditUI, EditorUI) {
                 auto obj = m_editorLayer->createObject(replaceWithObjID, currentObj.obj->getPosition(), false);
                 if (copyValues) {
                     obj->setScaleX(currentObj.scaleX);
+                    obj->m_scaleX = currentObj.scaleX;
                     obj->setScaleY(currentObj.scaleY);
+                    obj->m_scaleY = currentObj.scaleY;
                     obj->setRotationX(currentObj.rotationX);
                     obj->setRotationY(currentObj.rotationY);
                     obj->setFlipX(currentObj.flipX);
