@@ -1,6 +1,21 @@
 # Replace Object
-Adds a button to replace one object with another.
-## Tutorial
-The mod is pretty simple, the first object you select will be treated as the object you want to replace, the second as what you want to replace it with (these objects will be deleted). If you only have *2* objects selected, *all* instances of that object will be replaced. If you have *3 or more* objects selected, only the instances of that object *in your selection* will be replaced.
+Replace one object with another.
+
+## How To Use
+-> be you
+
+-> select object (**replace object**)
+
+-> select another object (**replace with object**)
+
+-> maybe select other objects if you only wanna replace a specific selection
+
+-> click the replace object button
+
+-> ~~crash~~
+
+-> replace objects :3333
+
 ## Credits
-- *gdjayy* (on the geode modding server) for the mod idea
+- ***gdjayy*** the mod idea
+- ***Alphalaneous*** the mod pretty much
